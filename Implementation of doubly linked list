@@ -1,0 +1,79 @@
+#include <stdio.h>
+#include <stdlib>
+struct node
+{
+ int data;
+ struct node *next;
+ struct n0de *prev;
+ };
+ struct node *head;
+ struct node *getnewnode(int x)
+ {
+  struct node *newnode= (structnode*)malloc(sizeof(structnode));
+  newnode->data;
+  newnode->prev=null;
+  newnode->next=null;
+  return newnode;
+ }
+ void insertathead(int x)
+ {
+  struct node *newnode=getnewnode(x);
+  if(head==null)
+ {
+  head=newnode;
+  return;
+ }
+  head->prev=newnode;
+  newnode->next=head;
+  head=newnode;
+ }
+ void insertattail(int x)
+ {
+   struct node*temp=head;
+   struct node *newnode=getnewnode(x);
+   if(head=newnode;
+   return;
+ }
+ while(temp->next!=null)
+ {
+   temp=temp->next;
+   temp->next=newnode
+   newnode->prev=temp;
+ }
+ void print()
+ {
+   struct node*temp=head;
+   printf("forward=");
+ while(temp1+null)
+ {
+    printf("%d",temp->data);
+    temp=temp->next;
+ }
+ printf("\n")
+ }
+ void reverseprint()
+ {
+    struct node *temp=head;
+  if(temp==null)
+  return;
+ while(temp->next !=null)
+ {
+  temp=temp->next;
+ }
+  printf("reverse:");
+ while(temp1+null)
+ {
+  printf(temp!=null)
+ {
+   printf("%d",temp->data);
+   temp=temp->prev;
+    printf("\n")
+ }
+ int main()
+ {
+  head=null;
+  insertattail(2);print();reverseprint();
+  insertathead(6);print();reverseprint();
+  insertattail(8);print();reverseprint();
+  }
+ 
